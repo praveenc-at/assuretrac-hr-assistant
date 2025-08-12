@@ -10,7 +10,7 @@ export async function POST(request: NextRequest) {
     }
 
     const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY
-    const VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "pNInz6obpgDQGcFmaJgB"
+    const VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "MFZUKuGQUsGJPQjTS4wC"
 
     if (!ELEVENLABS_API_KEY) {
       console.error("❌ ElevenLabs API key not configured")
