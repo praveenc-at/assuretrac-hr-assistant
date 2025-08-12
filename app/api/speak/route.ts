@@ -34,7 +34,7 @@ export async function POST(request: NextRequest) {
         },
       }),
     })
-    // console.log("🔊 ElevenLabs API response status:", response);
+    console.log("🔊 ElevenLabs API response status:", response);
     console.log("ELEVENLABS_API_KEY present?", !!ELEVENLABS_API_KEY);
     console.log("ELEVENLABS_API_KEY value?", ELEVENLABS_API_KEY);
     console.log("Status:", response.status, response.statusText);
