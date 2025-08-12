@@ -9,7 +9,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "No text provided" }, { status: 400 })
     }
 
-    const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY
+    const ELEVENLABS_API_KEY = (process.env.ELEVENLABS_API_KEY || "").trim();
     const VOICE_ID = process.env.ELEVENLABS_VOICE_ID || "MFZUKuGQUsGJPQjTS4wC"
 
     if (!ELEVENLABS_API_KEY) {
