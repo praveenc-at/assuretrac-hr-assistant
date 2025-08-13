@@ -2,7 +2,7 @@ import { type NextRequest, NextResponse } from "next/server"
 import OpenAI from "openai"
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: "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",
 })
 
 export async function POST(request: NextRequest) {
